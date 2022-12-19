@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: black;
+    background-image: linear-gradient(to right, rgba(143, 73, 224, 0.343) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #fff;
+}
+.burger{
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+.burger:hover{
+    color: #f50057;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.artista{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("../img/WhatsApp\ Image\ 2022-12-17\ at\ 7.14.33\ AM\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.hamburgesa{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-image: linear-gradient(-225deg, #76ff03 30%, #b2ff59 100%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(-225deg, rgba(117, 12, 237, 0.584) 0%, #3e0fd7e3 53%, rgba(143, 73, 224, 0.343) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .7s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom:15px;
+}
+.copy{
+    font-weight: 300px;
+    font-size: 25px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #d500f9 ;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 40%;
+}
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #33069b;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to right, #d7d2cc8e 0%, #304352 100%);
+    width: 30px;
+    height: 30px;
+    color: #ffff;
+    text-align:center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.gallery{
+    background-image: linear-gradient(to right, rgba(28, 2, 58, 0.416) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.galeria{
+    object-fit: cover;
+    width: 28%;
+    height: 400px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+.imagen-ligth{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+.agregar-imagen{
+    object-fit: cover;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+footer{
+    background-image: linear-gradient(to top,rgba(7, 1, 13, 0.866) 0%, #4015c3b3 100%);
+    padding-bottom: 0.2px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 50%;
+    color: #ffff;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 500;
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1.3px solid #e040fb;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon:hover{
+    background: #e8eaf6;
+    color: #33069b5f;
+}
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #f2f2f2;
+    margin-bottom: 60px;
+}
+@media screen  and (max-width:1400px){
+    .brand{
+        width: 200px;
+    }
+}
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 40vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 50%;
+        margin-bottom: 40px;
+        border-radius: 8px;
+    }
+    .service{
+        margin-bottom: 20px;
+    }
+    .agregar-imagen{
+        width: 60%;
+        height: 55%;
+    }
+    .galeria{
+        width:40%;
+        border-radius: 12px;
+    }
+    .footer-content{
+        justify-content: center;
+    }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social-media{
+        margin-left: 0;
+    }
+    .contact-us{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .brand{
+        width:40%;
+        padding: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .hamburgesa{
+        top: 20px;
+        right: 20px;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .agregar-imagen{
+        width: 95%;
+    }
+    .contenedor-servicio img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .service{
+        width: 200%;
+    }
+    .galeria{
+        width: 95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width:95px;
+    }
+    .brand{
+        width: 25vw;
+    }
+}
